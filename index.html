@@ -4,10 +4,10 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Maps and Services for ESA powered by Open Data &amp; Open Source</title>
+        <title>The EarthServer CryoService</title>
 
-        <meta name="description" content="Maps and Services for ESA powered by Open Data &amp; Open Source presentation at FOSS4G-Europe 2014.">
-        <meta name="author" content="Stephan Meissl">
+        <meta name="description" content="The EarthServer CryoService presentation at FOSS4G-Europe 2014.">
+        <meta name="author" content="Joachim Ungar">
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -38,13 +38,11 @@
 
                 <!-- Cover page -->
                 <section data-background="images/map_01_terrain_europe_l4.png" class="box">
-                    <h2 style="padding: 30px 20px 0 20px;">Maps and Services for ESA powered by Open Data &amp; Open Source</h2>
-                    <p>FOSS4G-Europe 2014 - Bremen - 2014-07-15</p>
+                    <h2 style="padding: 30px 20px 0 20px;">The EarthServer CryoService</h2>
+                    <p>FOSS4G-Europe 2014 - Bremen - 2014-07-17</p>
                     <a class="image" href="http://eox.at"><img style="background-color:rgba(255, 255, 255, 0); box-shadow:0 0 0;" src="./images/eox-logo.png" alt="EOX IT Services GmbH, Austria" title="EOX IT Services GmbH, Austria"/></a>
                     <p><a href="mailto:office@eox.at">office@eox.at</a> <a href="https://twitter.com/eox_a">@eox_a</a></p>
-                    <p>Stephan Meißl <a href="mailto:stephan.meissl@eox.at">stephan.meissl@eox.at</a> <a href="https://twitter.com/Schpidi">@Schpidi</a></p>
                     <p>Joachim Ungar <a href="mailto:joachim.ungar@eox.at">joachim.ungar@eox.at</a> <a href="https://twitter.com/ungarjo">@ungarjo</a></p>
-                    <p>Fabian Schindler <a href="mailto:fabian.schindler@eox.at">fabian.schindler@eox.at</a></p>
                     <br/>
                     <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0; margin:0 0 12px 0;" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a><small>&nbsp;This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</small></p>
                     <aside class="notes">
@@ -56,108 +54,153 @@
 
                 <!-- Introduction & Problem -->
                 <section>
-                    <section data-background="images/map_01_terrain_europe_l4.png" class="box">
-                        <img class="stretch imagebox" src="./images/ngeo_1_1.png"/>
+                    <section>
+                        <p><img class="" style="background-color:rgba(255, 255, 255, 0); box-shadow:0 0 0;" src="./images/logo-earthserver+text_small.png"/></p>
+                        <ul>
+                        	<li>FP7 Project - no. 283610</li>
+                        	<li>"Big Earth Data Analytics"</li>
+                        	<li><a href="http://www.opengeospatial.org/standards/wcps" target="_new">WCPS</a></li>
+                        </ul>
                         <aside class="notes">
-                            <p>Ignorieren Sie mal das Drumherum, da komme ich gleich dazu, und konzentrieren Sie sich auf die beiden Satellitenbilder in der Mitte. Wo befinden wir uns?</p>
+                            <p>FP7 project</p>
+                            <p>big data analytics</p>
+                            <p>WCPS</p>
                         </aside>
                     </section>
 
-                    <section data-background="images/map_01_terrain_europe_l4.png" class="box">
-                        <img class="stretch" src="./images/ngeo_1_2.png"/>
+                    <section class="box">
+                        <img class="stretch" src="./images/all-domains_SMALL.png"/>
+                        <aside class="notes">
+                        	<p>various lighthouse applications</p>
+                        </aside>
+                    </section>
+
+                    <section class="box">
+                      	<h2>CryoService</h2>
+                        <ul>
+                            <li class="fragment">snow &amp; ice community</li>
+                            <li class="fragment"><a href="http://cryoland.eu/" target="_new">CryoLand</a></li>
+                        </ul>
                         <aside class="notes">
                         </aside>
                     </section>
 
-                    <section data-background="images/map_01_terrain_europe_l4.png" class="box">
-                        <img class="stretch" src="./images/ngeo_1_3.png"/>
+                    <section class="box">
+                      	<h2>Back End</h2>
+                        <ul>
+                            <li class="fragment"><a href="http://rasdaman.org">rasdaman</a></li>
+                            <li class="fragment"><a href="http://eoxserver.org">EOxServer</a></li>
+                            <li class="fragment"><a href="https://gist.github.com/ungarj/5335126">synchronization script</a></li>
+                        </ul>
+                        <p></p>
+                        <h2>Front End</h2>
+                    	<ul>
+                            <li class="fragment"><a href="https://github.com/EOX-A/EOxClient">EOxClient</a></li>
+                            <li class="fragment"><a href="https://github.com/EOX-A/d3.TimeSlider">Time Slider (D3)</a></li>
+                            <li class="fragment"><a href="http://maps.eox.at">EOX Maps</a></li>
+                        </ul>
                         <aside class="notes">
                         </aside>
                     </section>
 
-                    <section data-background="images/map_01_terrain_europe_l4.png" class="box">
-                        <img class="stretch" src="./images/ngeo_2_1.png"/>
+                    <section class="box">
+                      	<h2>Data</h2>
+	                        <ul>
+	                            <li class="fragment">Fractional Snow Cover</li>
+	                            <li class="fragment">Snow Water Equivalent</li>
+	                            <li class="fragment">Quality Maps</li>
+	                            <li class="fragment">Pan-European and regional</li>
+	                        </ul>
                         <aside class="notes">
                         </aside>
                     </section>
 
-                    <section data-background="images/map_01_terrain_europe_l4.png" class="box">
-                        <img class="stretch" src="./images/ngeo_2_2.png"/>
+                    <section class="box">
+                      	<h2>Use Case</h2>
+                      		<p>Time series analysis on</p>
+	                        <ul>
+	                            <li class="fragment">points</li>
+	                            <li class="fragment">river basins</li>
+	                            <li class="fragment">contour levels</li>
+	                        </ul>
                         <aside class="notes">
                         </aside>
                     </section>
 
-                    <section data-background="images/map_01_terrain_europe_l4.png" class="box">
-                        <img class="stretch" src="./images/ngeo_2_3.png"/>
+                    <section class="box">
+                      	<h2>TODO: screen shots</h2>
                         <aside class="notes">
                         </aside>
                     </section>
+
+                    <section class="box">
+                      	<h2>WCPS</h2>
+                      	<pre><code data-trim contenteditable>
+for
+  c in (daily_FSC_PanEuropean_Optical),
+  m in (WFD_RBD_f1v4_daily_FSC_PanEuropean_Optical),
+  h in (GTOPO30_daily_FSC_PanEuropean_Optical)
+return encode( (float)
+  coverage temp
+    over $pt
+      time(imageCrsDomain(c[unix("2014-01-31T05:27:42.750Z":"2014-02-08T17:30:34.058Z")], unix))
+      values (
+        add(((c[
+          Lat(49.00202450311456:54.83581200212861),
+          Long(16.84439270728126:24.14589349938247),
+          unix($pt)
+        ] > 99 and c[
+          Lat(49.00202450311456:54.83581200212861), 
+          Long(16.84439270728126:24.14589349938247), 
+          unix($pt)
+        ] < 201 and m[
+          Lat(49.00202450311456:54.83581200212861), 
+          Long(16.84439270728126:24.14589349938247)
+        ] = 153 and h[
+          Lat(49.00202450311456:54.83581200212861), 
+          Long(16.84439270728126:24.14589349938247)
+        ] > 0 and h[
+          Lat(49.00202450311456:54.83581200212861), 
+          Long(16.84439270728126:24.14589349938247)
+        ] < 5000 ) * ( c[
+          Lat(49.00202450311456:54.83581200212861), 
+          Long(16.84439270728126:24.14589349938247), 
+          unix($pt)
+        ] ))) / (count(m[
+          Lat(49.00202450311456:54.83581200212861), 
+          Long(16.84439270728126:24.14589349938247)
+        ] < 1000) -  count(((( c[
+          Lat(49.00202450311456:54.83581200212861), 
+          Long(16.84439270728126:24.14589349938247), unix($pt)
+        ] > 99 and c[
+          Lat(49.00202450311456:54.83581200212861), 
+          Long(16.84439270728126:24.14589349938247), 
+          unix($pt)
+        ] < 201  and  m[
+          Lat(49.00202450311456:54.83581200212861), 
+          Long(16.84439270728126:24.14589349938247)
+        ] = 153  and  h[
+          Lat(49.00202450311456:54.83581200212861), 
+          Long(16.84439270728126:24.14589349938247)
+        ] > 0  and  h[
+          Lat(49.00202450311456:54.83581200212861), 
+          Long(16.84439270728126:24.14589349938247)
+        ] < 5000 ) * ( c[
+          Lat(49.00202450311456:54.83581200212861), 
+          Long(16.84439270728126:24.14589349938247),
+          unix($pt)
+        ] )) = 0)) ) 
+      ), "csv"
+    ); 
+                        </code></pre>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+
+
                 </section>
 
                 <section>
-                    <section data-background="images/map_02_terrain_europe_l5.png" class="box">
-                        <img class="stretch" src="./images/ngeo_3_start.png"/>
-                        <aside class="notes">
-                            <p>Hier können Sie den ngEO Client direkt nach dem Start sehen. Es ist noch kein Datensatz ausgewählt und keine Suche durchgeführt.</p>
-                        </aside>
-                    </section>
-                    <section data-background="images/map_02_terrain_europe_l5.png" class="box">
-                        <img class="stretch" src="./images/ngeo_4_suche.png"/>
-                        <aside class="notes">
-                            <p>Suche</p>
-                        </aside>
-                    </section>
-                    <section data-background="images/map_02_terrain_europe_l5.png" class="box">
-                        <img class="stretch" src="./images/ngeo_5_suche_detail.png"/>
-                        <aside class="notes">
-                            <p>Suche Detail</p>
-                        </aside>
-                    </section>
-                    <section data-background="images/map_02_terrain_europe_l5.png" class="box">
-                        <img class="stretch" src="./images/ngeo_6_3d.png"/>
-                        <aside class="notes">
-                            <p>3D</p>
-                        </aside>
-                    </section>
-
-                    <section data-background="images/map_03_terrain_europe_l6.png" class="box">
-                        <h2>ESA User Services - ngEO</h2>
-                        <ul>
-                            <li class="fragment">Operational fully online EO Data Access Service</li>
-                            <li class="fragment">Copernicus (former GMES) and ESA Legacy Satellite Missions</li>
-                            <li class="fragment">Generic System usable for any Mission</li>
-                            <li class="fragment">Demo <a href="http://ngeo.eox.at/" target="_blank">ngeo.eox.at</a></li>
-                        </ul>
-                        <aside class="notes">
-                            <p>Das Hauptziel der neuen ESA Dienste für Nutzer von Erdbeobachtungsdaten ist es einen operationalen Online Zugang zu den Daten bereitzustellen.</p>
-                            <p>Die verfügbaren Erdbeobachtungsdaten werden sowohl die Aufnahmen der GMES Satelliten als auch aller anderen ESA Satelliten Missionen sein.</p>
-                            <p>GMES, kurz für "Global Monitoring for Environment &amp; Security", oder Copernicus ist die Europäischen Initiative für Erdbeobachtung. Dabei werden fünf verschiedene Arten von Satelliten die sogenannten Sentinels betrieben werden. Die Starts der ersten 3 sind für nächstes Jahr geplant.</p>
-                            <p>ESA managt die Entwicklung eines generischen Systems, dass auch für andere Missionen zur Verfügung steht.</p>
-                            <p>Wer Interesse hat kann gerne die Demo ausprobieren, aber bitte beachten, dass es eine Demo ist und sich ändern kann.</p>
-                            <p>Wie schon gesagt, EOX ist im Rahmen dieser Entwicklung für den sogenannten Browse Server verantwortlich.</p>
-                        </aside>
-                    </section>
-
-                    <section data-background="images/map_03_terrain_europe_l6.png" class="box">
-                        <h3>ngEO Browse Server - Architecture</h3>
-                        <img style="background-color:rgba(255, 255, 255, 0); box-shadow:0 0 0;" src="./images/browse_server_architecture.png" alt="Browse Server Architecture" title="Browse Server Architecture"/>
-                        <aside class="notes">
-                            <ul>
-                                <li>Ausschließlich basierend auf Open Source Software wie</li>
-                                <ul>
-                                    <li><a href="http://gdal.org">GDAL</a> für die Verarbeitung von Rasterdaten</li>
-                                    <li><a href="http://mapserver.org">MapServer</a> für die Unterstützung von standardkonformen Services</li>
-                                    <li><a href="http://eoxserver.org">EOxServer</a> für die Erdbeobachtungserweiterungen der OGC Standards</li>
-                                    <li><a href="http://mapserver.org/mapcache/index.html">MapCache</a> für extrem hochperformante WMTS und WMS Services</li>
-                                </ul>
-                                <li>Standardkonforme Auslieferung von Karten und Vorschaubildern (Browse Images) via OGC WMTS und WMS</li>
-                                <li>Zentrales Konfigurationsmanagement durch ngEO Controller</li>
-                                <li>Daten von ngEO FEED</li>
-                                <li>Authentifizierung mit Shibboleth</li>
-                                <li>Autorisierung durch ngEO Web Server</li>
-                                <li>Verarbeitung von Rasterdaten: Geo-Referenzierung, Footprint, Projektion, Alpha, Tiling, Overviews, Compression</li>
-                            </ul>
-                        </aside>
                     </section>
 
                     <section data-background="images/map_03_terrain_europe_l7.png" class="box">
